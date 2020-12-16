@@ -1,0 +1,19 @@
+.characterCard {
+    min-height: 112px;
+}
+
+.characterImage {
+    float: left;
+}
+
+.characterContent {
+    display: flex;
+}
+
+.characterDescription {
+    padding-left: 16px;
+}
+
+.favoriteCharacter{
+    margin-left: 8px;
+}
