@@ -16,6 +16,9 @@ export class HomeComponent implements OnInit {
     this.getAllCharacters();
   }
 
+  /**
+   * Init characters attribute with list of all the marvel characters
+   */
   getAllCharacters(){
     this.marvelApiService.getAllCharacters().subscribe(data => this.characters = data);
   }

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MarvelApiService } from 'src/app/services/marvel-api.service';
 
 @Component({
   selector: 'app-character-card',
@@ -10,12 +11,17 @@ export class CharacterCardComponent implements OnInit {
   @Input() character : any;
   favorite : boolean;
 
-  constructor() { }
+  constructor(private marvelApiService : MarvelApiService) { }
 
   ngOnInit(): void {
   }
 
+  /**
+   * Action when click on the favorite button
+   * Put on the superteam list and return id of the character save
+   */
   onClick() {
+    // this.marvelApiService.saveCharacter(this.character.id).subscribe(id => id);
     this.favorite = !this.favorite;
   }
 
