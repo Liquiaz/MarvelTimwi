@@ -12,7 +12,6 @@ export class MarvelApiService {
 
   constructor(private http : HttpClient) { }
 
-
   /** 
    * get all the marvel characters 
    * */ 
